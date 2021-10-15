@@ -18,6 +18,12 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
+    if (game.score() == 240) {
+        game.pause()
+        game.gameOver()
+    }
+})
+basic.forever(function () {
     if (game.score() == 20) {
         wacht = 950
     }
@@ -25,6 +31,21 @@ basic.forever(function () {
 basic.forever(function () {
     if (game.score() == 40) {
         wacht = 850
+    }
+})
+basic.forever(function () {
+    if (game.score() == 200) {
+        wacht = 150
+    }
+})
+basic.forever(function () {
+    if (game.score() == 220) {
+        wacht = 50
+    }
+})
+basic.forever(function () {
+    if (game.score() == 150) {
+        wacht = 300
     }
 })
 basic.forever(function () {
